@@ -1,0 +1,64 @@
+.menu-curto {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000e6;
+    top: 0;
+    left: 0;
+}
+
+.menu-curto ul {
+    width: 100%;
+    padding: 0px;
+    float: left;
+    text-align: center;
+}
+
+.menu-curto li {
+    padding: 3%;
+}
+
+.menu-curto li a {
+    font-size: 2.5rem;
+    font-family: var(--fonts-secundaria);
+    color: #eee;
+    padding: 3% 3%;
+}
+
+.menu-curto li a:hover {
+    background-color: #eee;
+    color: var(--cor-texto-home-terceira);
+    border-radius: 38px;
+}
+
+.menu-curto a button {
+    background-color: var(--cor-button-primaria);
+    color: #fff;
+    font-family: var(--fonts-secundaria);
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    padding: 6px 30px;
+    border-radius: 38px;
+}
+
+.botao-close {
+    font-size: 3rem;
+    color: #eee;
+    background-color: var(--cor-texto-home-secundaria);
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+    padding: 7.5px 14.3px;
+    margin: 9px 14.5px;
+}
+
+.botao-close:hover {
+    background-color: var(--cor-texto-home-terceira);
+    border-radius: 4px;
+}
+
+.menu-curto a button:hover {
+    background-color: var(--cor-button-secundaria);
+}

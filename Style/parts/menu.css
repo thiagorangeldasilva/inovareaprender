@@ -1,0 +1,43 @@
+.menu{
+    display: flex;
+    float: right;
+    vertical-align: top;
+    height: 100%;
+    margin: 20px 20px;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    color: var(--cor-texto-home-secundaria);
+    font-family: var(--fonts-secundaria);
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 0px 10px;
+}
+
+.menu a button{
+    background-color: var(--cor-button-primaria);
+    color: #fff;
+    font-family: var(--fonts-secundaria);
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 6px 30px;
+    border-radius: 38px;
+}
+
+.menu a:hover, .menu a.selected {
+    color: var(--cor-texto-home-terceira);
+}
+
+.menu a button:hover{
+    background-color: var(--cor-button-secundaria);
+}

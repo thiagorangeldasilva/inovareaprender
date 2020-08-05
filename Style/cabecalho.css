@@ -1,0 +1,10 @@
+.cabecalho-home{
+    background: #ffffff;
+    height: 60px;
+    box-sizing: content-box;
+}
+
+.menu-cabecalho{
+    max-width: 1200px;
+    margin: 0px auto;
+}
