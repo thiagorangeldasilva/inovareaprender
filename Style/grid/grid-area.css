@@ -1,0 +1,14 @@
+.header{ grid-area: cabecalho;}
+.main{ grid-area: conteudo;}
+.footer{ grid-area: rodape;}
+
+/* grid-area conteudo-home main */
+.img1{ grid-area: imagem1;}
+.img2{ grid-area: imagem2;}
+.img3{ grid-area: imagem3;}
+.img4{ grid-area: imagem4;}
+.conteudo{ grid-area: area_conteudo;}
+
+/* grid-area rodape footer */
+.rede_sociais{ grid-area: rede_sociais;}
+.logo_faculdade{ grid-area: logo_faculdade;}

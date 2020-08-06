@@ -1,12 +1,14 @@
 :root{
     --fonts-principal: Headplane;
     --fonts-secundaria: Arial, Helvetica, sans-serif;
+    --fonts-terceiro: 'Josefin Sans', Helvetica, sans-serif;
     --cor-bg-principal: #EEF0F3;
-    --cor-texto-home-primaria: #FB2020;
+    --cor-texto-home-primaria: #ed3237;
     --cor-texto-home-secundaria: #3a3a3a;
     --cor-texto-home-terceira: #424C8E;
     --cor-button-primaria: #424c59;
     --cor-button-secundaria: #424C99;
+
     font-size: 60%;
 }
 
@@ -16,4 +18,11 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+}
+
+.pagina-home{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-areas: 'cabecalho' 'conteudo' 'rodape';
 }

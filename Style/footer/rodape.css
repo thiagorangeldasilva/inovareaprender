@@ -1,0 +1,19 @@
+.rodape{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 'rede_sociais' 'logo_faculdade';
+    align-items: center;
+}
+
+.rodape .rede_sociais{
+    justify-self: center;
+}
+
+.rodape .rede_sociais a{
+    margin-right: 15px;
+}
+
+.rodape .rede_sociais a:nth-child(3){
+    margin: 0px;
+}
