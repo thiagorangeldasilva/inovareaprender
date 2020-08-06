@@ -27,9 +27,7 @@
 }
 
 .menu-curto li a:hover {
-    background-color: #eee;
     color: var(--cor-texto-home-terceira);
-    border-radius: 38px;
 }
 
 .menu-curto a button {
