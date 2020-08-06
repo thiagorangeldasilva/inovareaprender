@@ -4,11 +4,10 @@ let indiceImg = 0, imagens =  Array.from(document.querySelectorAll('#slider img'
 function nextImage(){
     imagens[indiceImg].classList.remove('select')
     indiceImg++
-    if(indiceImg > 3){
+    if(indiceImg > imagens.length - 1){
         indiceImg = 0
     }
-     imagens[indiceImg].classList.add('select')
-
+    imagens[indiceImg].classList.add('select')
 }
 
 function start(){

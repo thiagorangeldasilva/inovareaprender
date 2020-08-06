@@ -36,6 +36,6 @@
     font-family: var(--fonts-terceiro);
     font-size: 2rem;
     color: var(--cor-texto-home-terceira);
-    margin-top: 15px;
+    margin: 15px auto;
     line-height: 2.5rem;
 }
