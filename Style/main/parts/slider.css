@@ -1,0 +1,13 @@
+.slider{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slider img{    
+    max-width: 0;
+    object-fit: cover;
+}
+
+img.select{
+    max-width: 100%;
+}
