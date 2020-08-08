@@ -8,12 +8,33 @@
 
 .conteudo-home .img1{
     width: calc(100% - 5%);
+    height: 10rem;
+    max-height: 250px;
     margin: 10px auto 0px;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.conteudo-home .img1 img{
+    height: 100%;
+    margin: 0px auto;
+}
 .conteudo-home .img2{
     width: calc(100% - 5%);
-    margin: 25px auto 0px;
+    height: 10rem;
+    max-height: 250px;
+    margin: 10px auto 0px;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conteudo-home .img2 img{
+    height: 100%;
+    margin: 0px auto;
 }
 
 .conteudo-home .area_conteudo{

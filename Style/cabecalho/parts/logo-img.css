@@ -1,6 +1,7 @@
 .logo-img{
-    display: inline;
+    display: inline-block;
     margin-left: 30px;
+    height: 60px;
 }
 
 .logo-img img{
