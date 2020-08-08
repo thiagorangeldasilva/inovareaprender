@@ -9,7 +9,6 @@
 .conteudo-home .img-home{
     width: calc(100% - 5%);
     height: 15rem;
-    max-height: 250px;
     margin: 10px auto 0px;
     display: flex;
     overflow: hidden;
@@ -23,7 +22,7 @@
 }
 
 .conteudo-home .img-home img:nth-child(even){
-    height: 90%;
+    height: 80%;
 }
 
 .conteudo-home .area_conteudo{
