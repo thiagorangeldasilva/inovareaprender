@@ -9,7 +9,7 @@
 .conteudo-home .img-home{
     width: calc(100% - 5%);
     height: 15rem;
-    margin: 10px auto 0px;
+    margin: 10px auto 10px;
     display: flex;
     overflow: hidden;
     justify-content: flex-start;
