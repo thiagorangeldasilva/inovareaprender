@@ -2,7 +2,7 @@
     display: grid;
     background-color: var(--cor-bg-principal);
     grid-template-columns: 1fr;
-    grid-row: 50px 5fr 1fr;
+    grid-row: 50px 1fr 50px;
     grid-template-areas: 'imagem1' 'area_conteudo' 'imagem2';   
 }
 
@@ -23,6 +23,10 @@
 
 .conteudo-home .img-home img:nth-child(even){
     height: 80%;
+}
+
+.conteudo-home .img-home img.ocultar{
+    display: none;
 }
 
 .conteudo-home .area_conteudo{
