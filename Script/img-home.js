@@ -31,7 +31,7 @@ function atualiza(){
 
 function roda(){
     setInterval( () => {
-        largura = innerWidth
+        largura = window.innerWidth
         atualiza()
     }, 30)
 }

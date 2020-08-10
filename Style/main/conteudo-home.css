@@ -21,7 +21,11 @@
     margin: 0px auto;
 }
 
-.conteudo-home .img-home img:nth-child(even){
+.conteudo-home .img1 img:nth-child(even){
+    height: 80%;
+}
+
+.conteudo-home .img2 img:nth-child(odd){
     height: 80%;
 }
 

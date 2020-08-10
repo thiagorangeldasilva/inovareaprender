@@ -2,8 +2,8 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 30px 50px 1fr ;
-    grid-template-areas: 'voltar_inicio' 'rede_sociais' 'logo_faculdade';
+    grid-template-rows: 30px 50px 1fr 50px;
+    grid-template-areas: 'voltar_inicio' 'rede_sociais' 'logo_faculdade' 'localizacao';
     align-items: center;
 }
 
@@ -41,6 +41,10 @@
     margin: 0px;
 }
 
+.rodape .rede_sociais i.fa-facebook-official{
+    color: #0C88EF;
+}
+
 .rodape .logo_faculdade{
     width: calc(100% - 5%);
     max-width: 1200px;
@@ -58,4 +62,14 @@
 
 .rodape .logo_faculdade img.femass{
     margin-right: 0px;
+}
+
+.rodape .local{
+    justify-self: center;
+    font-size: 2rem;
+    margin: auto 0px;
+}
+
+.rodape .local a{
+    color: var(--cor-texto-home-terceira);
 }
