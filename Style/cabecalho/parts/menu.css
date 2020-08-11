@@ -33,6 +33,10 @@
     border-radius: 38px;
 }
 
+.menu li div a{
+    padding: 0px 2.5px;
+}
+
 .menu a:hover, .menu a.selected {
     color: var(--cor-texto-home-terceira);
 }
