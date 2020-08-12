@@ -1,4 +1,4 @@
-const time = 3000
+const time = 5000
 let indiceImg = 0, imagens =  Array.from(document.querySelectorAll('#slider img')), seletorSlider = document.getElementById('selecionar'), selecionar = Array.from(document.querySelectorAll('#selecionar li')), passar = true
 
 seletorSlider.addEventListener('click', selecionarImage)
