@@ -1,13 +1,61 @@
-const time = 2000
-let indiceImg = 0, imagens =  Array.from(document.querySelectorAll('#slider img')), tamanho
+const time = 3000
+let indiceImg = 0, imagens =  Array.from(document.querySelectorAll('#slider img')), seletorSlider = document.getElementById('selecionar'), selecionar = Array.from(document.querySelectorAll('#selecionar li')), passar = true
+
+seletorSlider.addEventListener('click', selecionarImage)
 
 function nextImage(){
     imagens[indiceImg].classList.remove('select')
+    selecionar[indiceImg].classList.remove('selecSlider')
     indiceImg++
     if(indiceImg > imagens.length - 1){
         indiceImg = 0
     }
     imagens[indiceImg].classList.add('select')
+    selecionar[indiceImg].classList.add('selecSlider')
+}
+
+function selecionarImage(elemento){
+    let indice = 0
+    if(elemento.target.id === 'slider1'){
+        indice = 0 
+        if(indiceImg !== indice){
+            passar = false
+            imagens[indiceImg].classList.remove('select')
+            selecionar[indiceImg].classList.remove('selecSlider')
+            indiceImg = indice
+            imagens[indiceImg].classList.add('select')
+            selecionar[indiceImg].classList.add('selecSlider')
+            setTimeout(() => {
+                passar = true
+            }, time)
+        }
+    }else if(elemento.target.id === 'slider2'){
+        indice = 1 
+        if(indiceImg !== indice){
+            passar = false
+            imagens[indiceImg].classList.remove('select')
+            selecionar[indiceImg].classList.remove('selecSlider')
+            indiceImg = indice
+            imagens[indiceImg].classList.add('select')
+            selecionar[indiceImg].classList.add('selecSlider')
+            setTimeout(() => {
+                passar = true
+            }, time)
+        }
+    }else if(elemento.target.id === 'slider3'){
+        indice = 2 
+        if(indiceImg !== indice){
+            passar = false
+            imagens[indiceImg].classList.remove('select')
+            selecionar[indiceImg].classList.remove('selecSlider')
+            indiceImg = indice
+            imagens[indiceImg].classList.add('select')
+            selecionar[indiceImg].classList.add('selecSlider')
+            setTimeout(() => {
+                passar = true
+            }, time)
+        }
+    }
 }
 
 function tamanhoSlider(largura){
@@ -33,8 +81,11 @@ function start(){
         tamanhoSlider(window.innerWidth)
     })
     setInterval(() => {
-        nextImage()
+        if(passar){
+            nextImage()
+        }
     }, time)
 }
 
 window.addEventListener('load', start)
+

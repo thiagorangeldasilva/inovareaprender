@@ -3,10 +3,38 @@
     margin: 10px 0px;
 }
 
+.slider a{
+    height: 100%;
+}
+
 .slider img{    
     max-height: 0%;
 }
 
 img.select{
     max-height: 100%;
+    transition-duration: 1.5s;
+}
+
+.selecionar{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.selecionar .sliderselection{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--cor-texto-home-primaria);
+    margin: 10px;
+}
+
+.selecionar .selecSlider{
+    background-color: var(--cor-texto-home-terceira);
+}
+
+.selecionar .sliderselection:hover{
+    cursor: pointer;
 }
