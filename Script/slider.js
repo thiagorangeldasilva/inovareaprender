@@ -34,47 +34,6 @@ function selecionarImage(elemento){
             }
         }
     }
-    /*
-    if(elemento.target.id === 'slider1'){
-        indice = 0 
-        if(indiceImg !== indice){
-            passar = false
-            imagens[indiceImg].classList.remove('select')
-            selecionar[indiceImg].classList.remove('selecSlider')
-            indiceImg = indice
-            imagens[indiceImg].classList.add('select')
-            selecionar[indiceImg].classList.add('selecSlider')
-            setTimeout(() => {
-                passar = true
-            }, time)
-        }
-    }else if(elemento.target.id === 'slider2'){
-        indice = 1 
-        if(indiceImg !== indice){
-            passar = false
-            imagens[indiceImg].classList.remove('select')
-            selecionar[indiceImg].classList.remove('selecSlider')
-            indiceImg = indice
-            imagens[indiceImg].classList.add('select')
-            selecionar[indiceImg].classList.add('selecSlider')
-            setTimeout(() => {
-                passar = true
-            }, time)
-        }
-    }else if(elemento.target.id === 'slider3'){
-        indice = 2 
-        if(indiceImg !== indice){
-            passar = false
-            imagens[indiceImg].classList.remove('select')
-            selecionar[indiceImg].classList.remove('selecSlider')
-            indiceImg = indice
-            imagens[indiceImg].classList.add('select')
-            selecionar[indiceImg].classList.add('selecSlider')
-            setTimeout(() => {
-                passar = true
-            }, time)
-        }
-    }*/
 }
 
 function tamanhoSlider(largura){
