@@ -16,6 +16,25 @@ function nextImage(){
 
 function selecionarImage(elemento){
     let indice = 0
+    let tamSlider = document.getElementById('selecionar').children
+    let eID = elemento.target.id
+    
+    for(let i = 0, tam = tamSlider.length; i < tam; i++){
+        if(eID === `slider${i+1}`){
+            if(indiceImg !== i){
+                passar = false
+                imagens[indiceImg].classList.remove('select')
+                selecionar[indiceImg].classList.remove('selecSlider')
+                indiceImg = i
+                imagens[indiceImg].classList.add('select')
+                selecionar[indiceImg].classList.add('selecSlider')
+                setTimeout(() => {
+                    passar = true
+                }, time) 
+            }
+        }
+    }
+    /*
     if(elemento.target.id === 'slider1'){
         indice = 0 
         if(indiceImg !== indice){
@@ -55,7 +74,7 @@ function selecionarImage(elemento){
                 passar = true
             }, time)
         }
-    }
+    }*/
 }
 
 function tamanhoSlider(largura){
