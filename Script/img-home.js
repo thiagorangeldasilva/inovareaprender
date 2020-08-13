@@ -1,32 +1,22 @@
 let largura, img1filhos = document.getElementById('img1').children, img2filhos = document.getElementById('img2').children
+let valorLargura = [440, 560, 715, 840, 1000, 1120, 1275, 1400, 1565, 1690, 1840, 2000]
+let indFilho = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 function atualiza(){
-    //adiciona
-    if(largura < 440){ img1filhos[2].classList.add('ocultar'); img2filhos[2].classList.add('ocultar') }
-    if(largura < 560){ img1filhos[3].classList.add('ocultar'); img2filhos[3].classList.add('ocultar') }
-    if(largura < 715){ img1filhos[4].classList.add('ocultar'); img2filhos[4].classList.add('ocultar') }
-    if(largura < 840){ img1filhos[5].classList.add('ocultar'); img2filhos[5].classList.add('ocultar') }
-    if(largura < 1000){ img1filhos[6].classList.add('ocultar'); img2filhos[6].classList.add('ocultar') }
-    if(largura < 1120){ img1filhos[7].classList.add('ocultar'); img2filhos[7].classList.add('ocultar') }
-    if(largura < 1275){ img1filhos[8].classList.add('ocultar'); img2filhos[8].classList.add('ocultar') }
-    if(largura < 1400){ img1filhos[9].classList.add('ocultar'); img2filhos[9].classList.add('ocultar') }
-    if(largura < 1565){ img1filhos[10].classList.add('ocultar'); img2filhos[10].classList.add('ocultar') }
-    if(largura < 1690){ img1filhos[11].classList.add('ocultar'); img2filhos[11].classList.add('ocultar') }
-    if(largura < 1840){ img1filhos[12].classList.add('ocultar'); img2filhos[12].classList.add('ocultar') }
-    if(largura < 2000){ img1filhos[13].classList.add('ocultar'); img2filhos[13].classList.add('ocultar') }
-    //remove
-    if(largura > 440){ img1filhos[2].classList.remove('ocultar'); img2filhos[2].classList.remove('ocultar') }
-    if(largura > 560){ img1filhos[3].classList.remove('ocultar'); img2filhos[3].classList.remove('ocultar') }
-    if(largura > 715){ img1filhos[4].classList.remove('ocultar'); img2filhos[4].classList.remove('ocultar') }
-    if(largura > 840){ img1filhos[5].classList.remove('ocultar'); img2filhos[5].classList.remove('ocultar') }
-    if(largura > 1000){ img1filhos[6].classList.remove('ocultar'); img2filhos[6].classList.remove('ocultar') }
-    if(largura > 1120){ img1filhos[7].classList.remove('ocultar'); img2filhos[7].classList.remove('ocultar') }
-    if(largura > 1275){ img1filhos[8].classList.remove('ocultar'); img2filhos[8].classList.remove('ocultar') }
-    if(largura > 1400){ img1filhos[9].classList.remove('ocultar'); img2filhos[9].classList.remove('ocultar') }
-    if(largura > 1565){ img1filhos[10].classList.remove('ocultar'); img2filhos[10].classList.remove('ocultar') }
-    if(largura > 1690){ img1filhos[11].classList.remove('ocultar'); img2filhos[11].classList.remove('ocultar') }
-    if(largura > 1840){ img1filhos[12].classList.remove('ocultar'); img2filhos[12].classList.remove('ocultar') }
-    if(largura > 2000){ img1filhos[13].classList.remove('ocultar'); img2filhos[13].classList.remove('ocultar') }
+    // adicionar
+    for(let i = 0, tam = valorLargura.length; i < tam; i++){
+        if(largura < valorLargura[i]){
+            img1filhos[indFilho[i]].classList.add('ocultar')
+            img2filhos[indFilho[i]].classList.add('ocultar')
+        }
+    }
+    // remover
+    for(let i = 0, tam = valorLargura.length; i < tam; i++){
+        if(largura > valorLargura[i]){
+            img1filhos[indFilho[i]].classList.remove('ocultar')
+            img2filhos[indFilho[i]].classList.remove('ocultar')
+        }
+    }
 }
 
 function roda(){
