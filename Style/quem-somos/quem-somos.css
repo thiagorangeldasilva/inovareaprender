@@ -1,0 +1,30 @@
+.conteudo_quem_somos .area_conteudo{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: var(--cor-bg-secundario);
+    margin: 0px auto;
+}
+
+.area_conteudo h1, .area_conteudo .video_yt{
+    margin: 0px auto;
+}
+
+.area_conteudo h1{
+    padding: 10px 0px; 
+}
+
+.area_conteudo .video_yt{
+    text-align: center;
+}
+
+.video_yt iframe{
+    width: 840px;
+    height: 472.5px;
+}
+
+/* w 560 h 315*/
+
+/* 320    420 500   600 700   900    1200*/
+/* 252    336 392   448 504   644    840*/
+/* 141.75 189 220.5 252 283.5 362.25 472.5*/

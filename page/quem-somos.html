@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../Style/main/parts/slider.css">
     <link rel="stylesheet" href="../Style/quem-somos/quem-somos.css">
     <link rel="icon" type="image/png" href="../Images/logo/engrenagem-android-icon.svg">
-    <title>#inovareaprender | Educação inovadora</title>
+    <title>#inovareaprender | Quem somos</title>
 </head>
 <body>
     <div class="pagina-quem-somos" id="pagina-quem-somos">
@@ -66,8 +66,12 @@
             </div>
         </header>
         <main class="conteudo_quem_somos" id="conteudo_quem_somos">
-            <div class="quem_somos" id="quem_somos"></div>
-            <nav class="nav_quem-somos" id="nav_quem-somos"></nav>
+            <div class="area_conteudo">
+                <h1 id="title-quem-somos">Quem Somos</h1>
+                <div class="video_yt" id="video_yt">
+                    <iframe id="yt_video" src="https://www.youtube-nocookie.com/embed/atYmfr1uihI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
         <footer class="rodape" id="rodape">
             <div class="voltarInicio">
@@ -85,6 +89,7 @@
                 <a href="https://goo.gl/maps/fwX592LQevw7Q2d69" target="_blank"><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i> #inovareaprender</a>
             </div>
         </footer>
+        <script src="../Script/quem-somos-videos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
             $("#menu-toggle").click(() => {

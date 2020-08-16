@@ -57,7 +57,7 @@ function tamanhoSlider(largura){
 function start(){
     setInterval(() => {
         tamanhoSlider(window.innerWidth)
-    })
+    }, 5)
     setInterval(() => {
         if(passar){
             nextImage()
