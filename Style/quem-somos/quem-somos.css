@@ -6,7 +6,7 @@
     margin: 0px auto;
 }
 
-.area_conteudo h1, .area_conteudo .video_yt{
+.area_conteudo h1, .area_conteudo .video_yt, .area_conteudo .paragrafo-quem-somos, .area_conteudo .img-valores{
     margin: 0px auto;
 }
 
@@ -23,8 +23,16 @@
     height: 472.5px;
 }
 
-/* w 560 h 315*/
+.area_conteudo .paragrafo-quem-somos p{
+    font-family: var(--fonts-terceiro);
+}
 
-/* 320    420 500   600 700   900    1200*/
-/* 252    336 392   448 504   644    840*/
-/* 141.75 189 220.5 252 283.5 362.25 472.5*/
+.area_conteudo .img-valores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-valores img{
+    margin: 0px auto;
+}

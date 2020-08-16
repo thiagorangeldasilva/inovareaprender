@@ -22,13 +22,37 @@ function tamanhoVideo(largura){
         document.getElementById('yt_video').style.height = '472.5px'
     }
 }
+
 function tamanhoTela(largura){
     if(largura < 700){
         document.getElementById('video_yt').style.width = '90%'
         document.getElementById('title-quem-somos').style.width = '90%'
+        document.getElementById('paragrafo-quem-somos').style.width = '90%'
+        document.getElementById('img-valores').style.width = '90%'
     }else if(largura >= 700){
         document.getElementById('video_yt').style.width = '80%'
         document.getElementById('title-quem-somos').style.width = '80%'
+        document.getElementById('paragrafo-quem-somos').style.width = '80%'
+        document.getElementById('img-valores').style.width = '80%'
+    }
+}
+
+function tamanhoEngrenagem(largura){
+    if(largura >= 860){
+        document.getElementById('engrenagem-missao').style.width = '300px' 
+        document.getElementById('engrenagem-visao').style.width = '300px' 
+        document.getElementById('engrenagem-valores').style.width = '300px' 
+    }else if(largura < 860){
+        document.getElementById('engrenagem-missao').style.width = '200px' 
+        document.getElementById('engrenagem-visao').style.width = '200px' 
+        document.getElementById('engrenagem-valores').style.width = '200px'
+    }
+}
+
+function espacoEngrenagem(largura){
+    if(largura <= 500){
+        document.getElementById('engrenagem-missao').style.marginBottom = '10px' 
+        document.getElementById('engrenagem-visao').style.marginBottom = '10px'
     }
 }
 
@@ -36,6 +60,8 @@ function start(){
     setInterval(() => {
         tamanhoTela(window.innerWidth)
         tamanhoVideo(window.innerWidth)
+        tamanhoEngrenagem(window.innerWidth)
+        espacoEngrenagem(window.innerWidth)
     }, 5)
 }
 
