@@ -17,9 +17,12 @@ function tamanhoVideo(largura){
     }else if(largura < 1200){
         document.getElementById('yt_video').style.width = '644px'
         document.getElementById('yt_video').style.height = '362.25px'
-    }else if(largura >= 1200){
+    }else if(largura < 1400){
         document.getElementById('yt_video').style.width = '840px'
         document.getElementById('yt_video').style.height = '472.5px'
+    }else if(largura >= 1400){
+        document.getElementById('yt_video').style.width = '896px'
+        document.getElementById('yt_video').style.height = '504px'
     }
 }
 
@@ -29,11 +32,13 @@ function tamanhoTela(largura){
         document.getElementById('title-quem-somos').style.width = '90%'
         document.getElementById('paragrafo-quem-somos').style.width = '90%'
         document.getElementById('img-valores').style.width = '90%'
+        document.getElementById('estacoes-lab').style.width = '90%'
     }else if(largura >= 700){
         document.getElementById('video_yt').style.width = '80%'
         document.getElementById('title-quem-somos').style.width = '80%'
         document.getElementById('paragrafo-quem-somos').style.width = '80%'
         document.getElementById('img-valores').style.width = '80%'
+        document.getElementById('estacoes-lab').style.width = '80%'
     }
 }
 
@@ -56,12 +61,29 @@ function espacoEngrenagem(largura){
     }
 }
 
+function tamanhoEstacaoLab(largura){
+    if(largura > 1000){
+        document.getElementById('estacoes').style.width = '49.5%' 
+        document.getElementById('estacoes').style.marginBottom = '0'
+        document.getElementById('estacoes').style.margin = '0 auto'
+        document.getElementById('lab-inovar').style.width = '49.5%'
+        document.getElementById('lab-inovar').style.margin = '0 auto'
+    }else if(largura <= 1000){
+        document.getElementById('estacoes').style.width = '100%'
+        document.getElementById('estacoes').style.marginBottom = '10px'
+        document.getElementById('estacoes').style.marginRight = '0'   
+        document.getElementById('lab-inovar').style.width = '100%'
+        document.getElementById('lab-inovar').style.marginLeft = '0' 
+    }
+}
+
 function start(){
     setInterval(() => {
         tamanhoTela(window.innerWidth)
         tamanhoVideo(window.innerWidth)
         tamanhoEngrenagem(window.innerWidth)
         espacoEngrenagem(window.innerWidth)
+        tamanhoEstacaoLab(window.innerWidth)
     }, 5)
 }
 
