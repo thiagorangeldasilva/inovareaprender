@@ -10,16 +10,29 @@
     margin: 0px auto;
 }
 
-.area_conteudo .paragrafo-quem-somos, .area_conteudo .img-valores, .area_conteudo .estacoes-lab{
+.area_conteudo .paragrafo-quem-somos, .area_conteudo .img-valores, .area_conteudo .estacoes-lab, .area_conteudo .projetos-alunos, .area_conteudo .projetos-professores, .area_conteudo .projetos-universitario, .area_conteudo .projetos-torneio{
     margin: 25px auto;
 }
 
-.area_conteudo .title-qs{
+.area_conteudo .title-qs, .area_conteudo .title-sub{
     padding: 30px 0;
+    margin: 0 auto;
+}
+
+.area_conteudo .title-sub{
+    padding: 0;
+}
+
+.title-sub h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 200;
 }
 
 .area_conteudo h1{
     font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .area_conteudo .video_yt{
@@ -31,7 +44,7 @@
     border-radius: 20px;
 }
 
-.area_conteudo .paragrafo-quem-somos p{
+.area_conteudo .paragrafo-quem-somos p, .projetos-alunos p, .projetos-professores p, .projetos-universitario p, .projetos-torneio p{
     font-family: var(--fonts-secundaria);
     font-size: 2rem;
     font-weight: 100;
@@ -63,13 +76,11 @@
 }
 
 .area_conteudo .estacoes-lab div:first-child{
-    margin-left: 0;
-    background-color: #F27073;
+    background-color: var(--cor-projetos-primaria);
 }
 
 .area_conteudo .estacoes-lab div:last-child{
-    margin-right: 0;
-    background-color: #787AB5;
+    background-color: var(--cor-projetos-secundaria);
 }
 
 .area_conteudo .estacoes-lab div img{
@@ -110,4 +121,45 @@
 
 .estacoes-lab div ul li:last-child{
     margin: 0;
+}
+
+.fotos-aluno, .fotos-professor, .fotos-torneio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotos-aluno div, .fotos-professor div, .fotos-torneio div{
+    width: 300px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.fotos-universitario div{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.fotos-aluno div img, .fotos-professor div img, .fotos-universitario div img, .fotos-torneio div img{
+    width: 100%;
+}
+
+.fotos-aluno div h2{
+    font-family: var(--fonts-terceiro);
+    font-size: 2rem;
+    margin: 15px auto;
+}
+
+.fotos-aluno div p, .fotos-professor div p{
+    font-family: var(--fonts-secundaria);
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: var(--cor-texto-quem-somos-primaria);
+}
+
+.projetos-professores h2, .projetos-universitario h2, .projetos-torneio h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.3rem;
+    font-weight: 200;
 }

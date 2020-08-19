@@ -29,16 +29,26 @@ function tamanhoVideo(largura){
 function tamanhoTela(largura){
     if(largura < 700){
         document.getElementById('video_yt').style.width = '90%'
-        document.getElementById('title-quem-somos').style.width = '90%'
+        document.getElementById('title-qs').style.width = '90%'
+        document.getElementById('title-sub').style.width = '90%'
         document.getElementById('paragrafo-quem-somos').style.width = '90%'
         document.getElementById('img-valores').style.width = '90%'
         document.getElementById('estacoes-lab').style.width = '90%'
+        document.getElementById('projetos-alunos').style.width = '90%'
+        document.getElementById('projetos-professores').style.width = '90%'
+        document.getElementById('projetos-universitario').style.width = '90%'
+        document.getElementById('projetos-torneio').style.width = '90%'
     }else if(largura >= 700){
         document.getElementById('video_yt').style.width = '80%'
-        document.getElementById('title-quem-somos').style.width = '80%'
+        document.getElementById('title-qs').style.width = '80%'
+        document.getElementById('title-sub').style.width = '80%'
         document.getElementById('paragrafo-quem-somos').style.width = '80%'
         document.getElementById('img-valores').style.width = '80%'
         document.getElementById('estacoes-lab').style.width = '80%'
+        document.getElementById('projetos-alunos').style.width = '80%'
+        document.getElementById('projetos-professores').style.width = '80%'
+        document.getElementById('projetos-universitario').style.width = '80%'
+        document.getElementById('projetos-torneio').style.width = '80%'
     }
 }
 
@@ -65,9 +75,9 @@ function tamanhoEstacaoLab(largura){
     if(largura > 1000){
         document.getElementById('estacoes').style.width = '49.5%' 
         document.getElementById('estacoes').style.marginBottom = '0'
-        document.getElementById('estacoes').style.margin = '0 auto'
+        document.getElementById('estacoes').style.margin = '0 auto 0 0'
         document.getElementById('lab-inovar').style.width = '49.5%'
-        document.getElementById('lab-inovar').style.margin = '0 auto'
+        document.getElementById('lab-inovar').style.margin = '0 0 0 auto'
     }else if(largura <= 1000){
         document.getElementById('estacoes').style.width = '100%'
         document.getElementById('estacoes').style.marginBottom = '10px'
