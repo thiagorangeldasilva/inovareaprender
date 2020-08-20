@@ -10,7 +10,7 @@
     margin: 0px auto;
 }
 
-.area_conteudo .paragrafo-quem-somos, .area_conteudo .img-valores, .area_conteudo .estacoes-lab, .area_conteudo .projetos-alunos, .area_conteudo .projetos-professores, .area_conteudo .projetos-universitario, .area_conteudo .projetos-torneio{
+.area_conteudo .paragrafo-quem-somos, .area_conteudo .img-valores, .area_conteudo .estacoes-lab, .area_conteudo .projetos-alunos, .area_conteudo .projetos-professores, .area_conteudo .projetos-universitario, .area_conteudo .projetos-torneio, .area_conteudo .projetos-oficina{
     margin: 25px auto;
 }
 
@@ -44,7 +44,7 @@
     border-radius: 20px;
 }
 
-.area_conteudo .paragrafo-quem-somos p, .projetos-alunos p, .projetos-professores p, .projetos-universitario p, .projetos-torneio p{
+.area_conteudo .paragrafo-quem-somos p, .projetos-alunos p, .projetos-professores p, .projetos-universitario p, .projetos-torneio p, .projetos-oficina p{
     font-family: var(--fonts-secundaria);
     font-size: 2rem;
     font-weight: 100;
@@ -123,7 +123,7 @@
     margin: 0;
 }
 
-.fotos-aluno, .fotos-professor, .fotos-torneio{
+.fotos-aluno, .fotos-professor, .fotos-torneio, .fotos-oficina{
     display: flex;
     flex-wrap: wrap;
 }
@@ -134,13 +134,19 @@
     text-align: center;
 }
 
+.fotos-oficina div{
+    width: 225px;
+    margin: 15px auto;
+    text-align: center;
+}
+
 .fotos-universitario div{
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
 }
 
-.fotos-aluno div img, .fotos-professor div img, .fotos-universitario div img, .fotos-torneio div img{
+.fotos-aluno div img, .fotos-professor div img, .fotos-universitario div img, .fotos-torneio div img, .fotos-oficina div img{
     width: 100%;
 }
 
@@ -150,14 +156,14 @@
     margin: 15px auto;
 }
 
-.fotos-aluno div p, .fotos-professor div p{
+.fotos-aluno div p, .fotos-professor div p, .fotos-oficina div p{
     font-family: var(--fonts-secundaria);
     font-size: 1.7rem;
     font-weight: 100;
     color: var(--cor-texto-quem-somos-primaria);
 }
 
-.projetos-professores h2, .projetos-universitario h2, .projetos-torneio h2{
+.projetos-professores h2, .projetos-universitario h2, .projetos-torneio h2, .projetos-oficina h2{
     text-align: center;
     margin-bottom: 25px;
     font-size: 2.3rem;

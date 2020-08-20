@@ -38,6 +38,7 @@ function tamanhoTela(largura){
         document.getElementById('projetos-professores').style.width = '90%'
         document.getElementById('projetos-universitario').style.width = '90%'
         document.getElementById('projetos-torneio').style.width = '90%'
+        document.getElementById('projetos-oficina').style.width = '90%'
     }else if(largura >= 700){
         document.getElementById('video_yt').style.width = '80%'
         document.getElementById('title-qs').style.width = '80%'
@@ -49,6 +50,7 @@ function tamanhoTela(largura){
         document.getElementById('projetos-professores').style.width = '80%'
         document.getElementById('projetos-universitario').style.width = '80%'
         document.getElementById('projetos-torneio').style.width = '80%'
+        document.getElementById('projetos-oficina').style.width = '80%'
     }
 }
 
